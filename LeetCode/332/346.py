@@ -4,9 +4,19 @@ class MovingAverage:
         """
         Initialize your data structure here.
         """
-        
+        self.window = []
+        self.size = size
 
-    def next(self, val: int) -> float:
+    def next(self, val: int) -> float:        
+        self.window.append(val)
+        
+        if len(self.window) > self.size:
+            self.window.pop(0)
+
+        if len(self.window) == 0:
+            return 0
+
+        return sum(self.window) / len(self.window)
         
 
 
