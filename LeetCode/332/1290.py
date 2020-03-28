@@ -9,7 +9,7 @@ class Solution:
         binary_num = ""
 
         while head:
-            binary_num += str(head.val)
+            binary_num += str(head.val
             head = head.next
         
         if len(binary_num) > 0:
