@@ -10,4 +10,3 @@ class Solution:
             final_str += alphabets[0] * n
 
         return final_str
-        
